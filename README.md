@@ -1,12 +1,17 @@
-# Autoscale benchmarks
+# Autoscale Benchmarks
 
 This is a collection of benchmark sets generated with the [Autoscale
 tool](https://github.com/AI-planning/autoscale). The tool automatically computes
 a good scaling in task difficulty so that it is easy to compare the performance
 of different planners.
 
-The benchmarks cover all domains from the optimal and satisficing tracks of the
-International Planning Competition, with only a few exceptions:
+See [autoscale-benchmarks-21.11.pdf](autoscale-benchmarks-21.11.pdf) for a
+detailed description of the latest Autoscale benchmark sets for optimal and
+agile/satisficing planning. The PDF also contains a comparison of the Autoscale
+benchmarks to the benchmarks from the IPC.
+
+The Autoscale benchmarks cover all domains from the optimal and satisficing
+tracks of the International Planning Competition, with only a few exceptions:
  * Movie is excluded since all instances are trivial.
  * Petri-net-alignment is excluded since the available generator is not
    completely automated and there are only 20 instances.
@@ -44,18 +49,14 @@ benchmark set.
 
 ## Citation
 
-If you use the Autoscale benchmarks, please cite the paper "Automatic Instance
-Generation for Classical Planning" by Álvaro Torralba, Jendrik Seipp, and Silvan
-Sievers (ICAPS 2021):
-
     @InProceedings{torralba-et-al-icaps2021,
-      author = "Torralba, {\'A}lvaro and Seipp, Jendrik and Sievers, Silvan",
-      editor = "Goldman, Robert P. and Biundo, Susanne and Katz, Michael",
+      author =    "{\'A}lvaro Torralba and Jendrik Seipp and Silvan Sievers",
+      title =     "Automatic Instance Generation for Classical Planning",
       booktitle = "Proceedings of the Thirty-First International Conference
                    on Automated Planning and Scheduling (ICAPS 2021)",
+      editor =    "Robert P. Goldman and Susanne Biundo and Michael Katz",
       publisher = "AAAI Press",
-      title = "Automatic Instance Generation for Classical Planning",
-      pages = "376--384",
-      year = "2021"
+      pages =     "376--384",
+      year =      "2021"
     }
 
